@@ -13,7 +13,7 @@
           <span className="handle">@ironhack</span>
         </span>
 
-        <span className="timestamp">Nov 30, 2020</span>
+        <Timestamp />
       </div>
 
       <p className="message">
@@ -39,3 +39,12 @@ a {
   color: #42b983;
 }
 </style>
+<script>
+
+export default{
+  props: {
+    timestamp: String,
+  },
+};
+</script>
+
