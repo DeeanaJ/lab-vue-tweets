@@ -1,20 +1,14 @@
 <template>
   <div className="tweet">
-    <ProfileImage :image="user.image" />
+    <ProfileImage :image= "user.image" />
     <div className="body">
       <div className="top">
-        <span className="user">
-          <span className="name">Ironhack</span>
-          <span className="handle">@ironhack</span>
-        </span>
+       <User :user="user"/>
 
-        <Timestamp :timestamp="timestamp" />
+        <Timestamp :timestamp= "timestamp" />
       </div>
 
-      <p className="message">
-        On December 7th, we will be hosting a #webinar that will introduce you
-        to #SQL! Are you ready? 🚀
-      </p>
+      <Message :message= "message"/>
     <Actions />
     </div>
 
